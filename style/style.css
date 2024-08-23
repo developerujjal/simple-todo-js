@@ -1,0 +1,117 @@
+*{
+    font-family: "Oswald", sans-serif;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.wrapper-box-input input {
+    width: 60%;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    border: 1px solid #36d399;
+    border-radius: 9px;
+}
+
+.wrapper-box-input {
+    margin: 0px auto;
+    display: flex;
+    width: 34%;
+    justify-content: space-around;
+}
+
+.wrapper-box-input button {
+    padding: 1px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #36d399;
+    font-size: 1.2rem;
+    color: #36d399;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.wrapper-box-input button:hover{
+    cursor: pointer;
+    background-color: #36d399;
+    color: black;
+}
+
+.wrapper-box-input input:focus{
+    outline: 2px solid #36d399;
+    outline-offset: 2px;
+    
+}
+
+.table-container {
+    width: 50%;
+    margin: 0px auto;
+    text-align: right;
+    /* margin-top: 18px; */
+}
+
+table.table {
+    display: table;
+}
+
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 18px 0px;
+}
+
+.table tr{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+thead {
+    color: #6c757d; 
+}
+
+th, td {
+    padding: 12px 14px;
+    vertical-align: middle;
+}
+
+.delete-wrapper button {
+    border: none;
+    padding: 4px 20px;
+    background-color: #f87272;
+    border-radius: 11px;
+    transition: 0.3s;
+}
+
+.delete-wrapper button:hover{
+    cursor: pointer;
+    background-color: #d96d6d;
+}
+
+
+
+
+
+
+
+
+
+.button-done {
+    border: none;
+    padding: 3px 17px;
+    background-color: #279e73;
+    border-radius: 8px;
+}
+
+.button-delete {
+    background-color: #f87272;
+}
+
+.button-done:hover{
+    cursor: pointer;
+    background-color: #1f7e5b;
+}
+
+.button-delete:hover{
+    background-color: #d96d6d;
+    
+}

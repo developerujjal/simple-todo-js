@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>To Do List 🖐📚</h1>
+    </header>
+    <main>
+        <section>
+            <div class="main-input-and-table">
+                <div class="wrapper-box-input">
+                    <input type="text" placeholder="Type here">
+                    <button>Add Task</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>Description</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <tr>
+                                <td>
+                                    <button class="button-done">DONE</button>
+                                    <button class="button-delete button-done">DELETE</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="delete-wrapper">
+                        <button>CLEAR ALL</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
