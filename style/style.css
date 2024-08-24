@@ -90,11 +90,7 @@ th, td {
 
 
 
-
-
-
-
-
+/* js file button */
 
 .button-done {
     border: none;
@@ -115,4 +111,9 @@ th, td {
 .button-delete:hover{
     background-color: #d96d6d;
     
+}
+
+
+.underline{
+    text-decoration: line-through;
 }
