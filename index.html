@@ -19,8 +19,8 @@
         <section>
             <div class="main-input-and-table">
                 <div class="wrapper-box-input">
-                    <input type="text" placeholder="Type here">
-                    <button>Add Task</button>
+                    <input id="text-field" type="text" placeholder="Type here">
+                    <button id="btn-addTask">Add Task</button>
                 </div>
                 <div class="table-container">
                     <table class="table">
@@ -32,12 +32,12 @@
                             </tr>
                         </thead>
                         <tbody id="tbody">
-                            <tr>
+                            <!-- <tr>
                                 <td>
                                     <button class="button-done">DONE</button>
                                     <button class="button-delete button-done">DELETE</button>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
 
@@ -48,6 +48,8 @@
             </div>
         </section>
     </main>
+
+    <script src="js/todo.js"></script>
 </body>
 
 </html>
