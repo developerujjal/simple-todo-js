@@ -1,6 +1,7 @@
-let count = 0;
+// let count = 0;
+
 document.getElementById("btn-addTask").addEventListener("click", function(){
-    let textInputFieldElement = document.getElementById("text-field");
+/*  let textInputFieldElement = document.getElementById("text-field");
     let textInputFieldValue = textInputFieldElement.value;
     
     document.getElementById("text-field").value = "";
@@ -15,18 +16,29 @@ document.getElementById("btn-addTask").addEventListener("click", function(){
     <button class="button-delete button-done done-delete">DELETE</button>
     </td>
     
-    `
+    ` 
+*/
+
+
+
+    let inputTextValue =  inputValue("text-field");  // call the input function for InputTextValue;
+    let createNewElement = createElement(); // Call the Create function for newElement Value
+
 
     let selectTableBodyElement = document.getElementById("tbody");
   
+    document.getElementById("text-field").value = "";
 
-    if(textInputFieldValue.length > 0){
-        selectTableBodyElement.appendChild(newElement)
+    if(inputTextValue.length > 0){
+        selectTableBodyElement.appendChild(createNewElement)
     }
 
 
 
-    // done button
+
+/* 
+   // Done Button from <td>
+
     let btns = document.querySelectorAll(".done-button");
     for(let btn of btns){
         btn.addEventListener("click", function(e){
@@ -39,7 +51,8 @@ document.getElementById("btn-addTask").addEventListener("click", function(){
     }
 
 
-    //delete button
+
+    //Delete Button from <td>
 
     let deleteBtns = document.querySelectorAll(".done-delete");
     for(let deleteBtn of deleteBtns){
@@ -54,17 +67,55 @@ document.getElementById("btn-addTask").addEventListener("click", function(){
             row.remove();
 
         })
-    }
+    } 
+        
+*/
 
+        doneButton(".done-button");
+
+        deleteBtn(".done-delete");
 
 })
 
 
+
+
+
+// Clear All Button
 
 document.getElementById("btn-clearAll").addEventListener("click", function(){
    let tableTrElements = document.querySelectorAll("#tbody tr");
    for(let tableTrElement of tableTrElements){
     tableTrElement.remove();
    }
-//    tableTrElement.remove();
+
+})
+
+
+
+
+// keyboard Enter work
+
+document.getElementById("text-field").addEventListener("keyup", function(event){
+    if(event.key === "Enter"){
+        let inputFieldValue = inputValue("text-field");
+        let createNewElement = createElement();
+    
+        let selectTableBodyElement = document.getElementById("tbody");
+      
+  
+        document.getElementById("text-field").value = "";
+    
+        if(inputFieldValue.length > 0){
+            selectTableBodyElement.appendChild(createNewElement)
+        }
+
+
+        doneButton(".done-button");
+
+        deleteBtn(".done-delete");
+    
+    }
+
+
 })
